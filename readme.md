@@ -1,6 +1,6 @@
 # eslint-plugin-drizzle-postgres
 
-Official ESLint plugin for [Drizzle ORM](https://orm.drizzle.team/) to help you avoid common pitfalls and enforce best practices.
+Unofficial ESLint plugin for [Drizzle ORM](https://orm.drizzle.team/) to help you avoid common pitfalls and enforce best practices.
 
 ## Features
 

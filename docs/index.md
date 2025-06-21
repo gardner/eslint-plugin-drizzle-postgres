@@ -7,7 +7,8 @@ hero:
   text: "ESLint Plugin for Drizzle ORM with PostgreSQL"
   tagline: Enforce PostgreSQL best practices and prevent common pitfalls when using Drizzle ORM
   image:
-    src: /drizzle-hero.svg
+    light: https://raw.githubusercontent.com/drizzle-team/drizzle-orm/refs/heads/main/misc/readme/logo-github-sq-light.svg
+    dark: https://raw.githubusercontent.com/drizzle-team/drizzle-orm/refs/heads/main/misc/readme/logo-github-sq-dark.svg
     alt: Drizzle ESLint Plugin
   actions:
     - theme: brand
