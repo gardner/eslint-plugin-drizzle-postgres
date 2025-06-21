@@ -13,7 +13,7 @@ const uuidIndexRule: TSESLint.RuleModule<MessageIds, [Options?]> = {
     docs: {
       description:
         "Enforce that UUID columns have indexes to ensure query performance.",
-      url: "https://github.com/drizzle-team/eslint-plugin-drizzle-postgres",
+      url: "https://github.com/gardner/eslint-plugin-drizzle-postgres",
     },
     messages: {
       enforceUUIDIndexes:

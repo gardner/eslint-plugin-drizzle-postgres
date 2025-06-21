@@ -9,7 +9,7 @@ const preferUuidRule: TSESLint.RuleModule<MessageIds> = {
     docs: {
       description:
         "Suggest using UUID for primary keys instead of serial/integer.",
-      url: "https://github.com/drizzle-team/eslint-plugin-drizzle-postgres",
+      url: "https://github.com/gardner/eslint-plugin-drizzle-postgres",
     },
     hasSuggestions: true,
     messages: {

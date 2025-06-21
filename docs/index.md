@@ -18,7 +18,7 @@ hero:
       link: /rules/
     - theme: alt
       text: GitHub
-      link: https://github.com/drizzle-team/eslint-plugin-drizzle-postgres
+      link: https://github.com/gardner/eslint-plugin-drizzle-postgres
 
 features:
   - icon: 🛡️
@@ -125,6 +125,6 @@ export default [
 
 ## Community
 
-- [GitHub Repository](https://github.com/drizzle-team/eslint-plugin-drizzle-postgres)
+- [GitHub Repository](https://github.com/gardner/eslint-plugin-drizzle-postgres)
 - [Discord Community](https://discord.gg/drizzle-orm)
 - [Drizzle ORM Documentation](https://orm.drizzle.team)

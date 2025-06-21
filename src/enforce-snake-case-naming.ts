@@ -9,7 +9,7 @@ const snakeCaseRule: TSESLint.RuleModule<MessageIds> = {
     docs: {
       description:
         "Enforce snake_case naming convention for PostgreSQL tables and columns.",
-      url: "https://github.com/drizzle-team/eslint-plugin-drizzle-postgres",
+      url: "https://github.com/gardner/eslint-plugin-drizzle-postgres",
     },
     messages: {
       useSnakeCase:

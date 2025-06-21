@@ -14,7 +14,7 @@ const requireRLSRule: TSESLint.RuleModule<MessageIds, [Options?]> = {
     docs: {
       description:
         "Require Row-Level Security (RLS) on sensitive tables to protect data access.",
-      url: "https://github.com/drizzle-team/eslint-plugin-drizzle-postgres",
+      url: "https://github.com/gardner/eslint-plugin-drizzle-postgres",
     },
     messages: {
       missingRLS:

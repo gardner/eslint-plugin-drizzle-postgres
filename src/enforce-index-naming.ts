@@ -9,7 +9,7 @@ const indexNamingRule: TSESLint.RuleModule<MessageIds> = {
     docs: {
       description:
         "Enforce naming convention for indexes: idx_tablename_column(s) or idx_tablename_purpose.",
-      url: "https://github.com/drizzle-team/eslint-plugin-drizzle-postgres",
+      url: "https://github.com/gardner/eslint-plugin-drizzle-postgres",
     },
     messages: {
       invalidIndexName:

@@ -9,7 +9,7 @@ const noSelectStarRule: TSESLint.RuleModule<MessageIds> = {
     docs: {
       description:
         "Avoid SELECT * queries. Explicitly list columns for better performance.",
-      url: "https://github.com/drizzle-team/eslint-plugin-drizzle-postgres",
+      url: "https://github.com/gardner/eslint-plugin-drizzle-postgres",
     },
     messages: {
       noSelectStar:

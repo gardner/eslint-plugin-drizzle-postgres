@@ -11,7 +11,7 @@ const deleteRule: TSESLint.RuleModule<MessageIds> = {
     docs: {
       description:
         "Enforce that `delete` method is used with `where` to avoid deleting all the rows in a table.",
-      url: "https://github.com/drizzle-team/eslint-plugin-drizzle-postgres",
+      url: "https://github.com/gardner/eslint-plugin-drizzle-postgres",
     },
     fixable: "code",
     messages: {

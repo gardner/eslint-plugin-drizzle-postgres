@@ -9,7 +9,7 @@ const preventRLSBypassRule: TSESLint.RuleModule<MessageIds> = {
     docs: {
       description:
         "Prevent accidental RLS bypass and require documentation when bypass is necessary.",
-      url: "https://github.com/drizzle-team/eslint-plugin-drizzle-postgres",
+      url: "https://github.com/gardner/eslint-plugin-drizzle-postgres",
     },
     messages: {
       bypassDetected:

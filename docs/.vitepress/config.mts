@@ -5,18 +5,18 @@ export default defineConfig({
   title: "eslint-plugin-drizzle-postgres",
   description: "ESLint plugin for Drizzle ORM with PostgreSQL - Enforce best practices and prevent common mistakes",
   base: '/eslint-plugin-drizzle-postgres/',
-  
+
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'og:type', content: 'website' }],
     ['meta', { name: 'og:locale', content: 'en' }],
     ['meta', { name: 'og:site_name', content: 'ESLint Plugin Drizzle PostgreSQL' }],
   ],
-  
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/drizzle-logo.svg',
-    
+
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/getting-started' },
@@ -26,7 +26,7 @@ export default defineConfig({
         text: 'Resources',
         items: [
           { text: 'Drizzle ORM', link: 'https://orm.drizzle.team' },
-          { text: 'Changelog', link: 'https://github.com/drizzle-team/eslint-plugin-drizzle-postgres/releases' }
+          { text: 'Changelog', link: 'https://github.com/gardner/eslint-plugin-drizzle-postgres/releases' }
         ]
       }
     ],
@@ -96,20 +96,20 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/drizzle-team/eslint-plugin-drizzle-postgres' },
+      { icon: 'github', link: 'https://github.com/gardner/eslint-plugin-drizzle-postgres' },
       { icon: 'discord', link: 'https://discord.gg/drizzle-orm' }
     ],
-    
+
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2024-present Drizzle Team'
     },
-    
+
     editLink: {
-      pattern: 'https://github.com/drizzle-team/eslint-plugin-drizzle-postgres/edit/main/docs/:path',
+      pattern: 'https://github.com/gardner/eslint-plugin-drizzle-postgres/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
     },
-    
+
     search: {
       provider: 'local'
     }

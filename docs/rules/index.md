@@ -148,4 +148,4 @@ Be cautious when disabling safety rules. Always document why a rule is being dis
 
 ## Contributing New Rules
 
-Have an idea for a new rule? We welcome contributions! Check out our [contributing guide](https://github.com/drizzle-team/eslint-plugin-drizzle-postgres/blob/main/CONTRIBUTING.md) to learn how to add new rules to the plugin.
+Have an idea for a new rule? We welcome contributions! Check out our [contributing guide](https://github.com/gardner/eslint-plugin-drizzle-postgres/blob/main/CONTRIBUTING.md) to learn how to add new rules to the plugin.
