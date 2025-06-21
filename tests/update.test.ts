@@ -1,12 +1,16 @@
-// @ts-ignore
+// @ts-ignore - RuleTester types are complex
 import { RuleTester } from "@typescript-eslint/rule-tester";
 
 import myRule from "../src/enforce-update-with-where";
 
-const parserResolver = require.resolve("@typescript-eslint/parser");
-
 const ruleTester = new RuleTester({
-  parser: parserResolver,
+  languageOptions: {
+    parser: require("@typescript-eslint/parser"),
+    parserOptions: {
+      ecmaVersion: "latest",
+      sourceType: "module",
+    },
+  },
 });
 
 ruleTester.run("my-rule", myRule, {

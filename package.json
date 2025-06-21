@@ -2,10 +2,14 @@
   "name": "eslint-plugin-drizzle",
   "version": "0.1.6",
   "description": "Eslint plugin for drizzle users to avoid common pitfalls",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
   "scripts": {
-    "test": "vitest",
-    "build": "npx tsc -b"
+    "test": "vitest --run",
+    "build": "npx tsc -b",
+    "lint": "eslint ."
   },
   "keywords": [
     "eslint",
@@ -15,17 +19,21 @@
   ],
   "author": "Angelelz",
   "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
-    "@typescript-eslint/utils": "^6.10.0",
-    "@typescript-eslint/parser": "^6.10.0",
-    "@typescript-eslint/rule-tester": "^6.10.0",
-    "eslint": "^8.53.0",
-    "prettier": "3.0.3",
-    "typescript": "^5.2.2",
-    "vitest": "^0.34.6"
+    "@eslint/js": "^9.29.0",
+    "@typescript-eslint/eslint-plugin": "^8.34.1",
+    "@typescript-eslint/parser": "^8.34.1",
+    "@typescript-eslint/rule-tester": "^8.34.1",
+    "@typescript-eslint/utils": "^8.34.1",
+    "eslint": "^9.29.0",
+    "eslint-plugin-eslint-plugin": "^6.5.0",
+    "eslint-plugin-n": "^17.20.0",
+    "prettier": "3.5.3",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
   },
   "peerDependencies": {
-    "eslint": ">=8.0.0"
+    "eslint": ">=9.0.0"
   }
 }
