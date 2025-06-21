@@ -14,7 +14,7 @@ const timestampColumnsRule: TSESLint.RuleModule<MessageIds, [Options?]> = {
     docs: {
       description:
         "Require tables to have created_at and updated_at timestamp columns.",
-      url: "https://github.com/drizzle-team/eslint-plugin-drizzle",
+      url: "https://github.com/drizzle-team/eslint-plugin-drizzle-postgres",
     },
     messages: {
       missingTimestamps:

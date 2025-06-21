@@ -14,7 +14,7 @@ const requireRLSRule: TSESLint.RuleModule<MessageIds, [Options?]> = {
     docs: {
       description:
         "Require Row-Level Security (RLS) on sensitive tables to protect data access.",
-      url: "https://github.com/drizzle-team/eslint-plugin-drizzle",
+      url: "https://github.com/drizzle-team/eslint-plugin-drizzle-postgres",
     },
     messages: {
       missingRLS:
@@ -65,11 +65,11 @@ const requireRLSRule: TSESLint.RuleModule<MessageIds, [Options?]> = {
     // Helper to check if a table name is sensitive
     function isSensitiveTable(tableName: string): boolean {
       const lowerName = tableName.toLowerCase();
-      
+
       if (sensitiveTables.includes(tableName)) {
         return true;
       }
-      
+
       return sensitivePatterns.some((pattern) =>
         lowerName.includes(pattern.toLowerCase())
       );

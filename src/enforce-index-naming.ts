@@ -9,7 +9,7 @@ const indexNamingRule: TSESLint.RuleModule<MessageIds> = {
     docs: {
       description:
         "Enforce naming convention for indexes: idx_tablename_column(s) or idx_tablename_purpose.",
-      url: "https://github.com/drizzle-team/eslint-plugin-drizzle",
+      url: "https://github.com/drizzle-team/eslint-plugin-drizzle-postgres",
     },
     messages: {
       invalidIndexName:
@@ -44,17 +44,17 @@ const indexNamingRule: TSESLint.RuleModule<MessageIds> = {
         // Check index naming
         if (
           node.callee.type === "Identifier" &&
-          (node.callee.name === "index" || 
+          (node.callee.name === "index" ||
            node.callee.name === "uniqueIndex" ||
            node.callee.name === "unique")
         ) {
           const indexNameArg = node.arguments[0];
           if (indexNameArg?.type === "Literal" && typeof indexNameArg.value === "string") {
             const indexName = indexNameArg.value;
-            
+
             // Check if it follows the pattern idx_[tablename]_[columns/purpose]
             const validPattern = /^(idx|uq|uk)_[a-z][a-z0-9_]*(_[a-z][a-z0-9_]*)*$/;
-            
+
             if (!validPattern.test(indexName)) {
               context.report({
                 node: indexNameArg,
@@ -65,7 +65,7 @@ const indexNamingRule: TSESLint.RuleModule<MessageIds> = {
               // Check if index name includes table name
               const prefix = node.callee.name === "index" ? "idx" : "uq";
               const expectedPrefix = `${prefix}_${currentTableName}_`;
-              
+
               if (!indexName.startsWith(expectedPrefix)) {
                 context.report({
                   node: indexNameArg,

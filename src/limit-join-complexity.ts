@@ -13,7 +13,7 @@ const limitJoinComplexityRule: TSESLint.RuleModule<MessageIds, [Options?]> = {
     docs: {
       description:
         "Limit the number of joins in a single query for better performance.",
-      url: "https://github.com/drizzle-team/eslint-plugin-drizzle",
+      url: "https://github.com/drizzle-team/eslint-plugin-drizzle-postgres",
     },
     messages: {
       tooManyJoins:
@@ -62,7 +62,7 @@ const limitJoinComplexityRule: TSESLint.RuleModule<MessageIds, [Options?]> = {
             ) {
               joinCount++;
             }
-            
+
             // Also walk down to find chained joins
             if (
               current.type === "MemberExpression" &&

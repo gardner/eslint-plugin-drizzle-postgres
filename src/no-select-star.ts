@@ -9,7 +9,7 @@ const noSelectStarRule: TSESLint.RuleModule<MessageIds> = {
     docs: {
       description:
         "Avoid SELECT * queries. Explicitly list columns for better performance.",
-      url: "https://github.com/drizzle-team/eslint-plugin-drizzle",
+      url: "https://github.com/drizzle-team/eslint-plugin-drizzle-postgres",
     },
     messages: {
       noSelectStar:
@@ -30,11 +30,11 @@ const noSelectStarRule: TSESLint.RuleModule<MessageIds> = {
           // Make sure this is likely a database query (has from() or similar)
           let parent = node.parent;
           let hasQueryMethod = false;
-          
+
           while (parent && parent.type === "MemberExpression") {
             parent = parent.parent;
           }
-          
+
           if (parent && parent.type === "CallExpression") {
             // Look for chained methods like from(), where(), etc.
             let current = parent;
@@ -49,7 +49,7 @@ const noSelectStarRule: TSESLint.RuleModule<MessageIds> = {
                   break;
                 }
               }
-              
+
               if (current.parent?.type === "CallExpression") {
                 current = current.parent;
               } else if (
@@ -62,7 +62,7 @@ const noSelectStarRule: TSESLint.RuleModule<MessageIds> = {
               }
             }
           }
-          
+
           if (hasQueryMethod) {
             context.report({
               node,

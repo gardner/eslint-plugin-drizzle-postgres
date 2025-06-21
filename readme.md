@@ -1,11 +1,11 @@
-# eslint-plugin-drizzle
+# eslint-plugin-drizzle-postgres
 
 Official ESLint plugin for [Drizzle ORM](https://orm.drizzle.team/) to help you avoid common pitfalls and enforce best practices.
 
 ## Features
 
 - **Safety Rules**: Prevent accidental data loss with required WHERE clauses
-- **Schema Conventions**: Enforce naming conventions and schema best practices  
+- **Schema Conventions**: Enforce naming conventions and schema best practices
 - **Performance**: Catch missing indexes and query performance issues
 - **Security**: Row-Level Security (RLS) enforcement for sensitive tables
 - **Type Safety**: PostgreSQL-specific type recommendations
@@ -13,13 +13,13 @@ Official ESLint plugin for [Drizzle ORM](https://orm.drizzle.team/) to help you 
 ## Installation
 
 ```bash
-npm install --save-dev eslint-plugin-drizzle
+npm install --save-dev eslint-plugin-drizzle-postgres
 # or
-pnpm add -D eslint-plugin-drizzle
+pnpm add -D eslint-plugin-drizzle-postgres
 # or
-yarn add -D eslint-plugin-drizzle
+yarn add -D eslint-plugin-drizzle-postgres
 # or
-bun add -D eslint-plugin-drizzle
+bun add -D eslint-plugin-drizzle-postgres
 ```
 
 ## Setup
@@ -28,7 +28,7 @@ bun add -D eslint-plugin-drizzle
 
 ```js
 // eslint.config.js
-import drizzle from 'eslint-plugin-drizzle';
+import drizzle from 'eslint-plugin-drizzle-postgres';
 
 export default [
   {
@@ -47,14 +47,14 @@ export default [
 
 ```js
 // eslint.config.js
-import drizzle from 'eslint-plugin-drizzle';
+import drizzle from 'eslint-plugin-drizzle-postgres';
 
 export default [
   // Use one of the preset configs
   ...drizzle.configs.recommended,
   // or
   ...drizzle.configs.all,
-  // or  
+  // or
   ...drizzle.configs.strict,
 ];
 ```
@@ -133,12 +133,12 @@ Some rules accept configuration options:
       sensitivePatterns: ['user', 'account', 'payment', 'auth'],
       sensitiveTables: ['custom_table']
     }],
-    
+
     // Set maximum number of joins
-    'drizzle/limit-join-complexity': ['warn', { 
-      maxJoins: 5 
+    'drizzle/limit-join-complexity': ['warn', {
+      maxJoins: 5
     }],
-    
+
     // Configure timestamp column requirements
     'drizzle/require-timestamp-columns': ['error', {
       checkTables: ['users', 'posts'], // Only check specific tables

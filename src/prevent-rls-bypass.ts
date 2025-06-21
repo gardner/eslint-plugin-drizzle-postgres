@@ -9,7 +9,7 @@ const preventRLSBypassRule: TSESLint.RuleModule<MessageIds> = {
     docs: {
       description:
         "Prevent accidental RLS bypass and require documentation when bypass is necessary.",
-      url: "https://github.com/drizzle-team/eslint-plugin-drizzle",
+      url: "https://github.com/drizzle-team/eslint-plugin-drizzle-postgres",
     },
     messages: {
       bypassDetected:
@@ -35,7 +35,7 @@ const preventRLSBypassRule: TSESLint.RuleModule<MessageIds> = {
     function hasValidBypassComment(node: TSESTree.Node): boolean {
       const sourceCode = context.sourceCode;
       const comments = sourceCode.getCommentsBefore(node);
-      
+
       return comments.some((comment) =>
         validBypassReasons.some((pattern) => pattern.test(comment.value))
       );
