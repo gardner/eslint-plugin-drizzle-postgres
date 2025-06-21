@@ -13,11 +13,9 @@ Unofficial ESLint plugin for [Drizzle ORM](https://orm.drizzle.team/) to help yo
 ## Installation
 
 ```bash
-npm install --save-dev eslint-plugin-drizzle-postgres
-# or
 pnpm add -D eslint-plugin-drizzle-postgres
 # or
-yarn add -D eslint-plugin-drizzle-postgres
+npm install --save-dev eslint-plugin-drizzle-postgres
 # or
 bun add -D eslint-plugin-drizzle-postgres
 ```

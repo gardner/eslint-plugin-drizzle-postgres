@@ -17,16 +17,12 @@ Install the plugin as a development dependency:
 
 ::: code-group
 
-```bash [npm]
-npm install --save-dev eslint-plugin-drizzle-postgres
-```
-
 ```bash [pnpm]
 pnpm add -D eslint-plugin-drizzle-postgres
 ```
 
-```bash [yarn]
-yarn add -D eslint-plugin-drizzle-postgres
+```bash [npm]
+npm install --save-dev eslint-plugin-drizzle-postgres
 ```
 
 ```bash [bun]
